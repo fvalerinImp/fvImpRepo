@@ -1,0 +1,6 @@
+framework module Pods_Tarea4DogsWithCoreData {
+  umbrella header "Pods-Tarea4DogsWithCoreData-umbrella.h"
+
+  export *
+  module * { export * }
+}

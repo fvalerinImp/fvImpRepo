@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/fvalerin/Desktop/iOSCourse/TAREAS/Tarea4DogsWithCoreData/Tarea4DogsWithCoreData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tarea4DogsWithCoreData.xcodeproj">
+   </FileRef>
+</Workspace>

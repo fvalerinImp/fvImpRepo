@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TareaDogsSinRealm/CoreDataManager.swift"
+            timestampString = "518308107.552662"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tarea4DogsWithCoreData.CoreDataManager.__deallocating_deinit"
+                  moduleName = "Tarea4DogsWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fvalerin/Desktop/iOSCourse/TAREAS/Tarea4DogsWithCoreData/TareaDogsSinRealm/CoreDataManager.swift"
+                  timestampString = "518310455.672984"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tarea4DogsWithCoreData.CoreDataManager.init () -&gt; Tarea4DogsWithCoreData.CoreDataManager"
+                  moduleName = "Tarea4DogsWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fvalerin/Desktop/iOSCourse/TAREAS/Tarea4DogsWithCoreData/TareaDogsSinRealm/CoreDataManager.swift"
+                  timestampString = "518310455.675452"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tarea4DogsWithCoreData.CoreDataManager.__allocating_init () -&gt; Tarea4DogsWithCoreData.CoreDataManager"
+                  moduleName = "Tarea4DogsWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fvalerin/Desktop/iOSCourse/TAREAS/Tarea4DogsWithCoreData/TareaDogsSinRealm/CoreDataManager.swift"
+                  timestampString = "518310455.677908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TareaDogsSinRealm/CoreDataManager.swift"
+            timestampString = "518309717.065941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "CoreDataManager"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
