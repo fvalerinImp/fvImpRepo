@@ -1,0 +1,6 @@
+framework module Pods_Tarea3DogsWithRealm {
+  umbrella header "Pods-Tarea3DogsWithRealm-umbrella.h"
+
+  export *
+  module * { export * }
+}
