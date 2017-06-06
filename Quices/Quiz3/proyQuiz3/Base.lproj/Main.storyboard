@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enter Number View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EnterNumberViewController" customModule="proyQuiz3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cJr-mL-uhB">
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hLI-Hv-yxT"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KPp-5b-6se"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hv3-WX-unz">
+                                <rect key="frame" x="0.0" y="627" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aVs-fQ-pnf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6j-KA-NPl">
+                                <rect key="frame" x="210" y="625" width="155" height="30"/>
+                                <state key="normal" title="Agregar"/>
+                                <connections>
+                                    <action selector="agregarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flg-e0-VM5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hv3-WX-unz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7qH-VC-Kb1"/>
+                            <constraint firstAttribute="trailing" secondItem="R6j-KA-NPl" secondAttribute="trailing" constant="10" id="ITj-j3-4gZ"/>
+                            <constraint firstItem="R6j-KA-NPl" firstAttribute="leading" secondItem="hv3-WX-unz" secondAttribute="trailing" constant="10" id="PyA-H6-En7"/>
+                            <constraint firstItem="cJr-mL-uhB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tjh-c7-5zg"/>
+                            <constraint firstItem="hv3-WX-unz" firstAttribute="top" secondItem="cJr-mL-uhB" secondAttribute="bottom" constant="10" id="ZHU-z5-NDp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hv3-WX-unz" secondAttribute="bottom" constant="10" id="gzA-uZ-RO6"/>
+                            <constraint firstAttribute="trailing" secondItem="cJr-mL-uhB" secondAttribute="trailing" id="nmk-X3-0Dt"/>
+                            <constraint firstItem="R6j-KA-NPl" firstAttribute="top" secondItem="cJr-mL-uhB" secondAttribute="bottom" constant="10" id="pRm-P3-UNW"/>
+                            <constraint firstItem="cJr-mL-uhB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pcy-FV-xaR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R6j-KA-NPl" secondAttribute="bottom" constant="10" id="qKi-Yk-g5M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tablaView" destination="cJr-mL-uhB" id="vIB-ut-jMC"/>
+                        <outlet property="textoField" destination="hv3-WX-unz" id="JTo-jV-jwt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
