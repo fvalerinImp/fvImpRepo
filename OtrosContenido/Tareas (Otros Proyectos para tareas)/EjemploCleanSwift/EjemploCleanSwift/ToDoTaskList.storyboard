@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vGc-Ec-J9b">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TasksList-->
+        <scene sceneID="zcB-TD-KJo">
+            <objects>
+                <navigationController title="TasksList" id="vGc-Ec-J9b" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YI0-2Y-Roa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZFL-Eb-VbJ" kind="relationship" relationship="rootViewController" id="a1z-RX-2oV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbX-mx-IVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-881" y="161"/>
+        </scene>
+        <!--To Do Tasks List View Controller-->
+        <scene sceneID="S1V-kw-2iV">
+            <objects>
+                <viewController storyboardIdentifier="ToDoTasksListViewController" id="ZFL-Eb-VbJ" customClass="ToDoTasksListViewController" customModule="EjemploCleanSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k22-9u-A8x"/>
+                        <viewControllerLayoutGuide type="bottom" id="QqQ-Qp-sLt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mbg-df-jpE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-fn-jd5">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZFL-Eb-VbJ" id="gqf-lZ-rum"/>
+                                    <outlet property="delegate" destination="ZFL-Eb-VbJ" id="QAH-Zh-saQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QqQ-Qp-sLt" firstAttribute="top" secondItem="Dec-fn-jd5" secondAttribute="bottom" id="1We-nc-cMq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dec-fn-jd5" secondAttribute="trailing" id="3cV-hN-RCK"/>
+                            <constraint firstItem="Dec-fn-jd5" firstAttribute="top" secondItem="k22-9u-A8x" secondAttribute="bottom" id="Zoz-Pu-BjI"/>
+                            <constraint firstItem="Dec-fn-jd5" firstAttribute="leading" secondItem="mbg-df-jpE" secondAttribute="leadingMargin" id="qLi-3j-Vha"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c6A-ba-fKE"/>
+                    <connections>
+                        <outlet property="tableView" destination="Dec-fn-jd5" id="KSA-zY-yu9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="brP-rI-L88" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="169"/>
+        </scene>
+    </scenes>
+</document>

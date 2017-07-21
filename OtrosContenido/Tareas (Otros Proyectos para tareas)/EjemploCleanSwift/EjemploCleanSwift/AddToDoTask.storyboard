@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add To Do Task View Controller-->
+        <scene sceneID="HBr-ZS-DNk">
+            <objects>
+                <viewController storyboardIdentifier="AddToDoTaskViewController" id="fPY-mi-P9h" customClass="AddToDoTaskViewController" customModule="EjemploCleanSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rpr-Ru-DIb"/>
+                        <viewControllerLayoutGuide type="bottom" id="TIX-Nd-Sqj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="efe-Y0-QLR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3h9-cI-2e4">
+                                <rect key="frame" x="31" y="50" width="313" height="200"/>
+                                <color key="backgroundColor" red="0.85885959201388884" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3h9-cI-2e4" firstAttribute="top" secondItem="Rpr-Ru-DIb" secondAttribute="bottom" constant="30" id="Dz8-zb-h1K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3h9-cI-2e4" secondAttribute="trailing" constant="15" id="YbQ-3I-MUO"/>
+                            <constraint firstItem="3h9-cI-2e4" firstAttribute="leading" secondItem="efe-Y0-QLR" secondAttribute="leadingMargin" constant="15" id="Zen-G6-6mT"/>
+                            <constraint firstItem="3h9-cI-2e4" firstAttribute="height" secondItem="efe-Y0-QLR" secondAttribute="height" multiplier="0.3" id="b52-by-F9Y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qef-rj-CbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134" y="-7"/>
+        </scene>
+    </scenes>
+</document>
